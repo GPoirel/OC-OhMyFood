@@ -2,10 +2,89 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>OhMyFood</title>
-    <link rel="stylesheet" href="style.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OhMyFood – Les meilleurs restaurants, réservés en un clic</title>
+    <meta name="description" content="OhMyFood vous aide à découvrir des restaurants, consulter leur menu et réserver votre table en quelques clics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <a href="#top" class="header__logo" aria-label="OhMyFood – accueil">
+            <img src="images/ohmyfood@2x.svg" alt="OhMyFood" width="196" height="34">
+        </a>
+        <nav class="header__nav" aria-label="Navigation principale">
+            <a href="#restaurants">Restaurants</a>
+            <a href="#fonctionnement">Comment ça marche</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <h1 class="hero__title">Découvrez, choisissez, <span>régalez-vous</span></h1>
+            <p class="hero__text">Parcourez les menus des restaurants près de chez vous et réservez votre table en quelques secondes.</p>
+            <a class="btn" href="#restaurants">Voir les restaurants</a>
+        </section>
+
+        <section class="restaurants" id="restaurants">
+            <h2 class="section-title">Nos restaurants</h2>
+            <div class="restaurants__list">
+                <article class="card">
+                    <img class="card__img" src="images/web/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette gastronomique dressée sur une table de restaurant" loading="lazy">
+                    <div class="card__body">
+                        <p class="card__tag">Gastronomique · Paris</p>
+                        <h3 class="card__title">Dinner at Mama's</h3>
+                        <p class="card__text">Une cuisine de saison, élégante et généreuse, servie dans une ambiance feutrée.</p>
+                        <a class="btn btn--small" href="#contact">Réserver</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/web/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Poisson vapeur servi sur un plat noir" loading="lazy">
+                    <div class="card__body">
+                        <p class="card__tag">Asiatique · Lyon</p>
+                        <h3 class="card__title">Jade Garden</h3>
+                        <p class="card__text">Poissons vapeur, dim sum et épices fraîches dans un décor chaleureux.</p>
+                        <a class="btn btn--small" href="#contact">Réserver</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/web/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Table dressée avec entrées, plat et pain vue du dessus" loading="lazy">
+                    <div class="card__body">
+                        <p class="card__tag">Méditerranéen · Marseille</p>
+                        <h3 class="card__title">La Table du Port</h3>
+                        <p class="card__text">Arancini, salades fraîches et pain chaud à partager face au Vieux-Port.</p>
+                        <a class="btn btn--small" href="#contact">Réserver</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="images/web/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Œufs bénédicte et café sur une table de brunch" loading="lazy">
+                    <div class="card__body">
+                        <p class="card__tag">Brunch · Bordeaux</p>
+                        <h3 class="card__title">Café Sunday</h3>
+                        <p class="card__text">Brunch gourmand tous les jours : œufs bénédicte, cafés de spécialité et jus pressés.</p>
+                        <a class="btn btn--small" href="#contact">Réserver</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="steps" id="fonctionnement">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <ol class="steps__list">
+                <li><span class="steps__num">1</span><h3>Choisissez</h3><p>Explorez les restaurants et leurs menus.</p></li>
+                <li><span class="steps__num">2</span><h3>Réservez</h3><p>Sélectionnez la date, l'heure et le nombre de convives.</p></li>
+                <li><span class="steps__num">3</span><h3>Savourez</h3><p>Présentez-vous et profitez de votre repas.</p></li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <img src="images/ohmyfood@2x.svg" alt="OhMyFood" width="160" height="28">
+        <p>Une question ? <a href="mailto:contact@ohmyfood.example">contact@ohmyfood.example</a></p>
+        <p class="footer__legal">© 2026 OhMyFood – Tous droits réservés</p>
+    </footer>
 </body>
 </html>
